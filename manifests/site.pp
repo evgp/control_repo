@@ -1,7 +1,13 @@
 node default {
   file {'/root/README':
-    ensure => file,
+    ensure  => file,
     content => "This is site.pp",
-    owner => 'root',
+    owner   => 'root',
+  }
+  
+  file {'/root/README':
+    owner   => 'root',
   }
 }
+
+
